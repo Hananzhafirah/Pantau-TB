@@ -2,8 +2,8 @@
 
 **PANTAU-TB** adalah prototipe web untuk klasifikasi probabilistik suspek Tuberkulosis (TB) menggunakan **Naive Bayes** dan visualisasi **indeks pemantauan spasial**.
 
-- Live demo: https://hananzhafirah.github.io/pantauTB/
-- Repository: https://github.com/Hananzhafirah/pantauTB
+- Live demo: https://hananzhafirah.github.io/Pantau-TB/
+- Repository: https://github.com/Hananzhafirah/Pantau-TB
 
 > PANTAU-TB adalah prototipe akademik. Posterior Naive Bayes bukan diagnosis klinis, dan indeks spasial bukan probabilitas penularan.
 
@@ -151,26 +151,3 @@ git clone https://github.com/Hananzhafirah/pantauTB.git
 cd pantauTB
 python -m http.server 8000
 ```
-
-Buka:
-
-```text
-http://localhost:8000
-```
-
-## Catatan konsistensi
-
-Implementasi ini diselaraskan dengan laporan final pada poin berikut:
-
-- prior dan likelihood Naive Bayes berasal dari constructed dataset 100 record;
-- place score hanya berasal dari kunjungan confirmed TB;
-- event place menggunakan koefisien `0.13`;
-- infectiousness place menggunakan `0.35 / 0.75 / 1.00`;
-- place spatial bandwidth `80 m` dan scaling `0.52`;
-- jendela 7 hari adalah inclusion window demo, bukan infectious period klinis;
-- koordinat menggunakan format `latitude, longitude`;
-- histori disimpan browser-local dan dapat dibackup sebagai JSON.
-
-## Disclaimer
-
-Sistem dibuat untuk pendidikan dan demonstrasi algoritma Artificial Intelligence. Jangan menggunakan keluaran PANTAU-TB sebagai diagnosis medis atau estimasi probabilitas transmisi klinis.
